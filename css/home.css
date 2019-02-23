@@ -41,7 +41,7 @@ img.img-banner{
 }
 /*het navbar*/
 .background-image{
-	background-image: url("hpny-tieude.jpg");
+	
 	height: 100%;
 }
 /*hang1*/
@@ -82,7 +82,7 @@ img.anh-sn{
 /*het khoi-1*/
 /*khoi2*/
 div.anh-k-2 {
-    background-image: url('images/khoi-2.png');
+    background-image: url('images/banner-k-2.png');
     width: auto;
     height: auto;
 }
