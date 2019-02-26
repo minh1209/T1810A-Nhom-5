@@ -41,7 +41,7 @@ img.img-banner{
 }
 /*het navbar*/
 .background-image{
-    background-image: url("hpny-tieude.jpg");
+   
     height: 100%;
 }
 
@@ -49,12 +49,26 @@ img.img-banner{
 .trang{
     background-color: #a52a2a;
 }
+
 .nd-khoi{
      margin-top: 95px;
 }
 img.img-2.tinanh {
     width: 100%;
     height: 100px;
+}
+a.tieude-2 {
+    width: 100%;
+    background-color: #00000021;
+    color: #a52a2a;
+    font-size: 16px;
+    padding-left: 13px;
+    text-decoration: none;
+    display: block;
+    
+    bottom: 1px;
+    left: 15px;
+    text-transform: uppercase;
 }
 /*het nd khoi*/
 /*hang1*/
@@ -141,4 +155,10 @@ img.anh-k3:hover{
 /*footer*/
 p.footer-size{
     font-size: 10px;
+}
+ul.footer-basis-menu {
+    list-style: none;
+}
+.footer-2{
+    background-color: #F1022A;
 }

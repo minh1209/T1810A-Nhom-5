@@ -5,6 +5,6 @@
  		/* Act on the event */
  		console.log('da click');
  		$('.nd-khoi').slideToggle();
- 		$('.mot-khoi').addClass('trang')
+ 		$('.mot-khoi').toggleClass('trang');
  	});
 })  
