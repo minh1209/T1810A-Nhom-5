@@ -1,82 +1,49 @@
-
-.container {
-  max-width: 960px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-
-/*
- * Custom translucent site header
- */
-
-.site-header {
-  background-color: #F1022A;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+a{
+    text-decoration: none;
 }
-.site-header a {
-  color: #fff;
-  transition: ease-in-out color .15s;
+/*navbar*/
+.mau-nen-1{
+	background-color: #F1022A;
 }
-.site-header a:hover {
-  color: #ddd;
-  text-decoration: none;
+.dropdown:hover .dropdown-menu{
+	display: block;
 }
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+.font-chu{
+	color: white;
 }
-
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+.kc_menu{
+	padding-left: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
+.kc_ul{
+	padding-top: 10px;	
+}
+.o-search{
+	width: 150px;
+}
+/*het navbar*/
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
+a.tieude-1 {
+    width: 90%;
+    background-color: #00000061;
+    color: white;
+    font-size: 21px;
+    padding-left: 13px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+    text-transform: uppercase;
+}
+a.tieude:hover{
+    color: red;
 }
 
 
-/*
- * Extra utilities
- */
-
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.flex-equal > * {
-  -ms-flex: 1;
-  -webkit-box-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
-  }
-}
-
-.overflow-hidden { overflow: hidden; }
