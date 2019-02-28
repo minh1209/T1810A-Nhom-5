@@ -7,9 +7,9 @@
 	<link rel="stylesheet" href="fonts/font-awesome.css">
  	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700i&amp;subset=vietnamese" rel="stylesheet">
 	<link rel="stylesheet" href="css/thu-vien-anh.css"> 
-	<script src="vendor/jquery/jquery-3-1.js"></script> 
+	<script src="vendor/jquery/jquery-3.3.1.js"></script> 
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
-	
+	<script type="text/javascript" src="json/thu-vien/anh.js"></script>
  	<script type="text/javascript" src="js/thu-vien-anh.js"></script>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
@@ -24,7 +24,7 @@
     </button>
       <div class="collapse navbar-toggleable-xs font-chu " id="exCollapsingNavbar2">
       	<div class="col-xs-2 col-md-1 col-sm-4">
-        	<a class="navbar-brand" href="#"><img src="images/logo.png" class="logo-1" width="100%" height="auto" alt=""></a>
+        	<a class="navbar-brand" href="file:///C:/Users/ADMIN/Documents/GitHub/T1810A-Nhom-5/home.html##"><img src="images/logo.png" class="logo-1" width="100%" height="auto" alt=""></a>
 
     	</div>
         <ul class="nav navbar-nav kc_ul ">
@@ -100,47 +100,8 @@
 			<div class="tab-content">
 				<div class="tab-pane active" id="tat-ca">
 					<div class="d-inline-flex w-100 my-2">
-						<div class="row">
+						<div class="row " id="list_product">
 
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
-								<div class="product-col">
-									<div class="mx-auto">
-										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
-								<div class="product-col">
-									<div class="mx-auto">
-										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
-								<div class="product-col">
-									<div class="mx-auto py-4">
-										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
-								<div class="product-col">
-									<div class="mx-auto">
-										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
-									</div>
-								</div>
-							</div>
-
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
-								<div class="product-col">
-									<div class="mx-auto">
-										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
-									</div>
-								</div>
-							</div>
 
 						</div>
 					</div>
@@ -148,9 +109,9 @@
 
 				<div class="tab-pane fade" id="g5-fans">
 					<div class="d-inline-flex w-100 my-2">
-						<div class="row">
+						<div class="row" id="list_product_2">
 
-							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
+							<!-- <div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
 								<div class="product-col">
 									<div class="mx-auto mb-2">
 										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
@@ -180,7 +141,7 @@
 										<img width="100%" height="220" src="images/sinh-nhat.png" alt="">
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -188,8 +149,8 @@
 
 				<div class="tab-pane fade" id="g5-sn">
 					<div class="d-inline-flex w-100 my-2">
-						<div class="row">
-
+						<div class="row" id="list_product_3">
+<!-- 
 							<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">
 								<div class="product-col">
 									<div class="justify-content-center mb-2">
@@ -220,7 +181,7 @@
 										<img width="100%" height="auto" src="images/sinh-nhat.png" alt="">
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -286,5 +247,44 @@
  					</div>
  				</div>
  		</div><!-- het footer -->
+ 		<script type="text/javascript">
+ 			
+			var content = '';
+			for(var i=0; i < anh.length; i++){
+
+				content +=			'<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">';
+				content +=			'<div class="product-col">';
+				content +=			'<div class="mx-auto">';
+				content +=			'<img width="100%" height="auto" src="'+ anh[i].tat_ca +'" alt="">';
+				content +=			'</div>';
+				content +=			'</div>';
+				content +=			'</div>';
+				jQuery("#list_product").html(content);
+				};
+				
+			var content_1 ='';
+			for(var i=0; i < g5_fans.length; i++){
+				content_1 +=			'<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">';
+				content_1 +=			'<div class="product-col">';
+				content_1 +=			'<div class="mx-auto mb-2">';
+				content_1 +=			'<img width="100%" height="auto" src="'+ g5_fans[i].g5_img +'" alt="">';
+				content_1 +=			'</div>';
+				content_1 +=			'</div>';
+				content_1 +=			'</div>';
+				jQuery('#list_product_2').html(content_1);
+			};
+			var content_2='';
+			for (var i =0; i < sn.length; i++) {
+				content_2 +=	'<div class="p-2 col-6 col-sm-6 col-lg-4 col-xl-4">';
+				content_2 +=	'<div class="product-col">';
+				content_2 +=	'<div class="mx-auto mb-2">';
+				content_2 +=	'<img width="100%" height="auto" src="'+ sn[i].sn_img +'" alt="">';
+				content_2 +=	'</div>';
+				content_2 +=	'</div>';
+				content_2 +=	'</div>';
+				jQuery('#list_product_3').html(content_2);
+			}
+
+		</script>
 </body>
 </html>
