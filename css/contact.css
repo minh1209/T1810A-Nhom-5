@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.logo-1-1 img{
+    width: 200px;
+    height: 100px;
+}
+/*het-logo-1*/
+img.img-banner{
+    width: 100%;
+    height:600px;
+}
+/*navbar*/
+.mau-nen-1{
+    background-color:#F1022A;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.font-chu{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.kc_menu{
+    padding-left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+.kc_ul{
+    padding-top: 10px;
+}
+
+.o-search{
+    width: 150px;
+}
+/*het navbar*/
+.background-image{
+
+    height: 100%;
+}
+
+
+.lien_he h1{
+    text-align: center;
+    color: #F1022A;
+    line-height: 150px;
+}
+
+.contact{
+    background: #e7e7e7;
+
+}
+.contact_1 ul{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contact_1 ul{
+    font-size: 16px;
+}
+.container_3{
+    margin-top: 10px;
+}
+.ban_do{
+    margin-top: 5px;
+}
+
+/*het-khoi-3*/
+/*footer*/
+
+p.footer-size{
+    font-size: 10px;
+}
+ul.footer-basis-menu {
+    list-style: none;
+}
+.footer-2{
+    background-color: #F1022A;
+}
