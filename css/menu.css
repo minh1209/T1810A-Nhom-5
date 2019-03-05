@@ -76,4 +76,15 @@ a.tieude-2 {
     text-transform: uppercase;
 }
 
+/*footer*/
+p.footer-size{
+    font-size: 10px;
+}
+ul.footer-basis-menu {
+    list-style: none;
+}
+.footer-2{
+    background-color: #F1022A;
+}
+
 
